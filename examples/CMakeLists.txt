@@ -7,7 +7,6 @@ function(add_example_executable name)
 	install(TARGETS ${name} DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
 endfunction()
 
-# add normalDist exe
 add_example_executable(normalDist)
 add_example_executable(uniformDist)
 add_example_executable(solidAngleDist)
