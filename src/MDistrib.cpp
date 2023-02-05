@@ -33,9 +33,6 @@ void MDistrib::SetSeed(unsigned int seed) {
 	mseed = seed;
 	random_engine.seed(mseed);
 }
-double MDistrib::GetU() {
-	return real_distribution(random_engine);
-}
 double MDistrib::GetUniform(const double& a, const double& b) {
 	if(a == b) {
 		weight = 1;

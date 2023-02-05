@@ -12,11 +12,10 @@ class MDistrib {
 		void SetSeed(unsigned int seed);
 		double GetWeight() const { return weight; }		
 		
-		double GetU();
 		double GetUniform(const double& a = 0, const double& b = 1);
 		double GetNormal(const double& mu = 0, const double& sigma = 1);
 		double *GetSolidAngle(double angles[2], const double& azMin = 0, const double& azMax = 1, 
-		const double& elMin = 0, const double& elMax = 1);
+				const double& elMin = 0, const double& elMax = 1);
 		double GetLogarithm(const double& min = 0, const double& max = 1);
 		double GetPoissonKnuth(const double& lambda = 0);
 		double GetPoissonCook(const double& lambda = 0);
